@@ -1,0 +1,1 @@
+declare module 'twitter-api-v2'
