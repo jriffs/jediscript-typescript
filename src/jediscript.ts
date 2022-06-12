@@ -2,6 +2,9 @@ import { Request } from "./classes/classes.js"
 import { app, checkSemantic, getProperties } from "./worker-functions/workers.js"
 import { ETwitterStreamEvent } from "twitter-api-v2"
 
+
+// https://voisascript.com?jriffs97&html-parsing-uhdsndl
+
 async function get_Stream() {
     try {
         let stream = await app.v2.searchStream({"expansions": "author_id", "tweet.fields": "referenced_tweets"})
@@ -58,4 +61,4 @@ async function get_Stream() {
 
 get_Stream()
 
-// https://voisascript.com?jriffs97&html-parsing-uhdsndl
+
