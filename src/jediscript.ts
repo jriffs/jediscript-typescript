@@ -36,7 +36,7 @@ async function get_Stream() {
                         console.log(`this is a ${type} tweet`)
                         return    
                     }
-                }
+                } //http://localhost:5000/files/afd7121d-ca0b-4e04-b81f-96ecc8648feb/url?filename=second test file.mp3
                 let props = getProperties(eventData['data'].text)                
                 let obj = new Request({
                     tweetFromID: eventData.data.author_id!,
